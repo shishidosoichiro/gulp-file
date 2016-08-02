@@ -1,0 +1,42 @@
+{
+  "name": "gulp-file",
+  "version": "0.0.1",
+  "description": "normal stream to gulp stream",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shishidosoichiro/gulp-file.git"
+  },
+  "keywords": [
+    "gulp",
+    "file",
+    "vinyl",
+    "stream"
+  ],
+  "author": "Soichiro Shishido",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shishidosoichiro/gulp-file/issues"
+  },
+  "homepage": "https://github.com/shishidosoichiro/gulp-file#readme",
+  "devDependencies": {
+    "array-stream": "git+https://github.com/shishidosoichiro/array-stream.git",
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.12",
+    "istanbul": "^0.4.4",
+    "map-stream": "0.0.6",
+    "mocha": "^3.0.0"
+  },
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "vinyl": "^1.2.0"
+  }
+}
